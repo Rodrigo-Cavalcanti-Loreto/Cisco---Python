@@ -1,0 +1,13 @@
+blocos = int(input("Quantos blocos você tem? "))
+i=1
+camada=0
+
+# a cada repetição do while, i aumenta e blocos diminui
+# i é a quantidade de blocos necessários para cada camada
+# blocos é a quantidade de blocos disponíveis para cada camada
+while i <= blocos:
+    blocos -= i
+    i += 1
+    camada += 1
+
+print("Sua pirâmide terá: ",camada, " camadas.")
