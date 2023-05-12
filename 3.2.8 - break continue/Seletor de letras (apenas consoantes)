@@ -4,9 +4,9 @@ j=0
 letra=""
 pal = pal.upper()
 vogais = ['A', 'E', 'I', 'O', 'U']
+semvogal = ""
 
-
-
+# uma letra por linha
 for i in range (len(pal)):
     letra = pal[i]
     for j in range(len(vogais)):
@@ -32,3 +32,18 @@ for i in range (len(pal)):
         continue
     print(letra)
 print ("Fim do loop")
+
+
+
+# em uma única linha
+for i in range (len(pal)):
+    letra = pal[i]
+    for j in range(len(vogais)):
+        if letra == vogais[j]:
+            break
+    if letra == vogais[j]:
+        continue
+    semvogal += letra
+#    print(letra)
+print(semvogal)
+
