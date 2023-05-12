@@ -1,0 +1,9 @@
+# enumerar números pares
+print("Enumere os números pares de 0 a 10")
+for i in range(11):
+    if i % 2:
+        continue
+    print("Número par: ",i)
+print("Fim da brincadeira...")
+
+#
