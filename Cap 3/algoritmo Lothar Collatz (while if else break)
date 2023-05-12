@@ -1,0 +1,17 @@
+c0 = int(input("Entre um número inteiro diferente de zero (0): "))
+i=0
+
+while True:
+    if c0%2:
+        c0= 3*c0 +1
+        i += 1
+        print("Valor intermediário ", i, ": ", c0)
+    else:
+        c0= int(c0/2)
+        i += 1
+        print("Valor intermediário ", i, ": ", c0)
+    if c0 == 1:
+        break
+
+print("Valor final: ", c0)
+print("Esse algoritmo teve ", i, " etapas.")
