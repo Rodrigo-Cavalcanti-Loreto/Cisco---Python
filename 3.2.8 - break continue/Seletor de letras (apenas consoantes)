@@ -1,0 +1,34 @@
+pal = input("Digite uma palavra qualquer: ")
+i=0
+j=0
+letra=""
+pal = pal.upper()
+vogais = ['A', 'E', 'I', 'O', 'U']
+
+
+
+for i in range (len(pal)):
+    letra = pal[i]
+    for j in range(len(vogais)):
+        if letra == vogais[j]:
+            break
+    if letra == vogais[j]:
+        continue
+    print(letra)
+    
+
+# alternativa
+for i in range (len(pal)):
+    letra = pal[i]
+    if letra == "A":
+        continue
+    if letra == "E":
+        continue
+    if letra == "I":
+        continue
+    if letra == "O":
+        continue
+    if letra == "U":
+        continue
+    print(letra)
+print ("Fim do loop")
