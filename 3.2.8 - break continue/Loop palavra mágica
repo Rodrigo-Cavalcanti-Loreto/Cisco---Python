@@ -1,0 +1,7 @@
+pal = input("Diz aí, qual a palavra mágica, meu amigo?")
+
+while True:
+    if pal == "chupacabra":
+        break
+    pal = input("Não, colega! Essa não é a palavra mágica!")
+print("Você saiu do loop com sucesso!")
