@@ -1,0 +1,14 @@
+# escreva uma linha de código que solicite que o usuário substitua o número do meio na lista por um número inteiro inserido pelo usuário (Etapa 1)
+# escreva uma linha de código que remova o último elemento da lista (Etapa 2)
+# escreva uma linha de código que imprima o comprimento da lista atual (Etapa 3).
+
+lista = [1,2,3,4,5]
+print(lista)
+
+num = int(input("Digite um número para substituir o valor central da lista: "))
+lista [2] = num
+
+del lista [-1]
+
+print('Comprimento da lista atual: ', len(lista))
+print(lista)
