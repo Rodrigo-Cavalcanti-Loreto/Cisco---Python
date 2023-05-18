@@ -1,0 +1,17 @@
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+l=len(my_list)
+i=0
+print(my_list)
+while i in range(len(my_list)-1):
+    print("testando i: ",i)
+    j=i+1
+    while j in range((i+1), len(my_list)):
+        print("Teste j: ",j)
+        if my_list[i] == my_list[j]:
+            del my_list[j]
+            print(my_list)
+            continue
+        j=j+1
+    i=i+1    
+print("A lista com os elementos exclusivos é: ")
+print(my_list)
